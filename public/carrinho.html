@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <h1>Carrinho</h1>
+        <ul>
+            <li>
+                <img src="" alt="" width="100">
+                <h3></h3>
+                <p>Preço: R$ </p>
+                <p>Quantidade: </p>
+                <form method="POST" action="remover_do_carrinho.php">
+                    <input type="hidden" name="produto_id" value="">
+                    <button type="submit">Remover do Carrinho</button>
+                </form>
+            </li>
+        </ul>
+        <form method="POST" action="carrinho.php">
+            <button type="submit" name="finalizar_compra">Finalizar Compra</button>
+        </form>
+        <p>Seu carrinho está vazio.</p>
+    <p><a href="index.php">Voltar para a Página Principal</a></p>
+</body>
+</html>

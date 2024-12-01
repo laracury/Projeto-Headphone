@@ -1,0 +1,139 @@
+@import url(principal.css);
+
+body{
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1FD7F4;
+  font-family: "Jua", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.form{
+  
+ text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 30px;
+  height: 470px;
+   width: 450px;
+  background: linear-gradient(180deg, #0F1517 0%, rgba(15, 21, 23, 0.25) 42.19%, rgba(23, 96, 123, 0.25) 62.85%, rgba(23, 96, 123, 0.50) 84.64%);
+  box-shadow: 5px 5px 6px 0px rgba(31, 215, 244, 0.30);
+}
+
+input{
+  font-size: 15px;
+  padding: 5px;
+  width: 70%;
+  outline: none;
+  border: none; 
+  border-radius: 5px;
+ 
+}
+
+.btn{
+  width: 70%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #1FD7F4;
+  color: #ffff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 17px;
+ 
+}
+
+
+.btn:hover{
+  background-color: #00bdda;
+}
+
+.btn:active{
+  
+  background-color: #5ce9ff;
+}
+
+
+.btn-baixo{
+  padding: 8px;
+  width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #1FD7F4;
+  border-radius: 5px; 
+  background-color: transparent;
+  color: var(--primaria);
+  margin: 15px;
+  margin-top: 18px;
+}
+  
+a{
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #00B2CF;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  .form {
+      width: 95%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .btn, .btn-baixo {
+      font-size: 14px;
+  }
+
+  .btn-baixo {
+      width: 100%;
+      max-width: none;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  .form {
+      width: 100%;
+      padding: 15px;
+      border-radius: 20px;
+  }
+
+  .btn, .btn-baixo {
+      font-size: 12px;
+      padding: 10px;
+  }
+
+  .btn-baixo {
+      max-width: none;
+      width: 70%;
+      margin: 10px 0;
+  }
+
+  a {
+      font-size: 12px;
+      margin-top: -15px;
+  }
+}

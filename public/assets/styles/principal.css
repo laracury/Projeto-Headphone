@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); /*Font Jua*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*Font Roboto*/
+
+
+:root{
+    --destaque: 'Jua', times, sans-serif;
+    --padrao: 'Roboto', Arial, sans-serif;
+
+    --primaria: #1FD7F4;
+    --primariaClaro: #47E6FF;
+    --primariaEscuro: #00B2CF;
+    --primariaTransparente: rgba(0, 179, 207, 0.75);
+    --vermelho: #F9595F;
+    --vermelhoClaro: #FF8287;
+    --vermelhoEscuro: #D42C33;
+    --verde: #34BF3B;
+    --verdeClaro: #3EE547;
+    --verdeEscuro: #129919;
+
+    --fundo: #051B22;
+    --linear: linear-gradient( to bottom, #0F1517 100%,  #0F1517 50%, #0F1517 25%, #17607B 25%, #17607B 50%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INICIO Apresentacao*/
+.apresentacao{
+    display: flex;
+    margin: 0 auto;
+    background: var(--fundo);
+    padding: 5rem 2rem;
+}
+
+.apresentacao_container{
+    width: 50%;
+    padding: 80px 40px;
+}
+.apresentacao_texto h1{
+    margin-left: 15px;
+    font-family: var(--destaque);
+    font-size: 60px;
+    color: var(--primaria);
+
+}
+.apresentacao_texto p{
+    color: #f3f1f1;
+    font-family: var(--padrao);
+    font-size: 19px;
+    margin: 24px 0 0 15px;
+}
+
+.image{
+    display: flex;
+    gap: 4rem;
+    margin: 33px 0 0 -30px;
+    cursor: pointer;
+}
+
+@keyframes hoverDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.azul{
+    margin-top:-10px;
+}
+
+.vermelho{
+    margin-top:-3px;
+}
+
+.azul, .verde, .vermelho{
+    transition: transform  0.3s ease-in-out;
+}
+
+.azul:hover, .verde:hover, .vermelho:hover{
+    animation:  hoverDown 0.6s ease-in-out infinite;
+}
+
+.image img{
+    height: 150px;
+}
+
+.image-esquerda{
+    width: 50%; 
+}
+
+.image-esquerda img{
+    margin-left: -10px;
+    margin-top: 40px;
+    height: 750px;
+    cursor: pointer;
+}
+
+@media (max-width:1270px){
+.apresentacao_texto h1{
+    font-size: 50px;
+}
+.apresentacao_container{
+    width: 40%;
+}
+.image-esquerda{
+    width: 60%;
+}
+}
+
+@media (max-width:1080px){
+.apresentacao_texto h1{
+    font-size: 40px;
+}
+.apresentacao_container{
+    width: 30%;
+}
+.image-esquerda{
+    width: 70%;
+}
+}
+
+@media (max-width:950px){
+.image-esquerda{
+    display: none;
+}
+.apresentacao_container{
+    width: 100%;
+    padding: 80px 0;
+}
+.apresentacao_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+.apresentacao_texto h1 {
+    font-size: 45px; 
+    margin-left: -45px;
+    
+}
+.apresentacao_texto p {
+    font-size: 16px; 
+    
+}
+.azul{
+    margin-top:-7px;
+}
+.image img{
+    height: 100px;
+}
+}
+
+@media (max-width:400px){
+.apresentacao{
+    padding: 0;
+}
+.apresentacao_texto h1 {
+    font-size: 25px; 
+    
+}
+.apresentacao_texto p {
+    font-size: 12px; 
+    margin-left: 0;
+    
+}
+.apresentacao_container{
+    width: 100%;
+    /* padding: 80px 30px; */
+}
+
+.image img{
+    height: 60px;
+}
+
+}
+
+/*FIM Apresentação*/
+
+/* INICIO EXPERIENCIA*/
+
+.experiencias{
+    background-color: var(--fundo);
+    padding-bottom: 3rem;
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.textos h2 {
+   color: var(--vermelhoClaro);
+   margin: 4rem 0;
+   font-family: var(--destaque);
+   font-size: 2.5rem;
+}
+
+.textos .text-p {
+    display: flex;
+    text-align: center;
+    max-width: 700px;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #f3f1f1;
+    font-family: var(--padrao);
+    margin-top: 20px;
+}
+
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 25px;
+}
+
+.div-icons-expert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-icons-expert, .icon-expert {
+    color: var(--primaria);
+    font-size: 25px;
+}
+
+.text-expert{
+    font-family: var(--padrao);
+    font-size: 14px;
+    color: #f3f1f1;
+    text-align: center;
+    margin-top: 15px;
+}
+@media (max-width: 1000px){
+    .textos h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px){
+    .textos{
+        padding: 1rem;
+    }
+    .textos h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .textos .text-p{
+        text-align: justify;
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 6rem;
+    }
+}
+
+/* FECHAMENTO EXPERIENCIA*/
+
+/*INICIO Products*/
+.sectionProducts{
+    background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionProducts h2{
+    color: var(--verdeClaro);
+    text-align: center;
+    font-family: var(--destaque);
+}
+
+.maisVendidos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 4rem 0;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.productImage{
+    height: 70%;
+}
+.productImage img{
+    width: 100%;
+    height: 100%;
+}
+.productsDescricao{
+    height: 30%;
+}
+
+.productsDescricao p{
+    color: white;
+    font-family: var(--padrao);
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.btnsGreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: auto;
+}
+
+.btnsGreen button{
+    background-color: transparent;
+    border: 1px solid var(--verde);
+    border-radius: 20px;
+    color: white;
+    padding: 0 10px;
+    font-family: var(--padrao);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btnsGreen button:hover{
+    box-shadow: 0px 1px 2px var(--verde),
+    0px -1px 2px var(--verde),
+    1px 0px 2px var(--verde),
+    -1px 0px 2px var(--verde);
+    transition: 1s;
+}
+
+.btnsGreen i{
+    color: var(--verde);
+    font-size: 25px;
+    cursor: pointer;    
+}
+
+.btnsRed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: auto;
+}
+
+.btnsRed button{
+    background-color: transparent;
+    border: 1px solid var(--vermelho);
+    border-radius: 20px;
+    color: white;
+    padding: 0 10px;
+    font-family: var(--padrao);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btnsRed button:hover{
+    box-shadow: 0px 1px 2px var(--vermelho),
+    0px -1px 2px var(--vermelho),
+    1px 0px 2px var(--vermelho),
+    -1px 0px 2px var(--vermelho);
+    transition: 1s;
+}
+.btnsRed i{
+    color: var(--vermelho);
+    font-size: 25px;
+    cursor: pointer;   
+}
+
+.btnsBlue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: auto;
+}
+.btnsBlue button{
+    background-color: transparent;
+    border: 1px solid var(--primaria);
+    border-radius: 20px;
+    color: white;
+    padding: 0 10px;
+    font-family: var(--padrao);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btnsBlue button:hover{
+    box-shadow: 0px 1px 2px var(--primaria),
+    0px -1px 2px var(--primaria),
+    1px 0px 2px var(--primaria),
+    -1px 0px 2px var(--primaria);
+    transition: 1s;
+}
+.btnsBlue i{
+    color: var(--primaria);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:430px){
+    .sectionProducts{
+        padding-top: 3rem;
+    }
+    .maisVendidos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .productImage{
+        height: 50%;
+
+    }
+    .productsDescricao{
+        height: 50%;
+
+    }
+}
+
+/*FIM Products*/
+
+/* Inicio Comentarios */
+
+.seComentarios{
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    padding: 2rem;
+    color: white;
+        
+    background-color: var(--fundo);
+}
+
+.text-comments h3 {
+    color: var(--primaria);
+    font-family: var(--destaque);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.box-comments {
+    border: 1px solid var(--primariaEscuro);
+    border-radius: 10px;
+    padding-top: 1rem;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-comments{
+    margin: 1rem 0;
+}
+.icon-comments i {
+    font-size: 2.5rem;
+    color: var(--primariaEscuro);
+} 
+
+.user-comment p{
+    font-family: var(--padrao);
+    color: var(--primariaEscuro);
+    font-size: 1rem;
+    text-align: justify;
+}
+.hearts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hearts .heartsIcons{
+    color: var(--vermelho);
+}
+.hearts p {
+    font-family: var(--destaque);
+    color: var(--primaria);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Seção responsiva dos comentarios */
+
+@media (min-width: 880px) {
+    .comments {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .box-comments {
+        padding: 0;
+    }
+
+    .user-comment p {
+        width: 300px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .comments {
+        gap: 5rem;
+    }
+
+    .user-comment p {
+        width: 250px;
+    }
+}
+
+@media (max-width: 780px) {
+    .text-comments h3 {
+        margin-bottom: 3rem;
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+
+        gap: 3rem;
+    }
+
+    .user-comment p {
+        width: 260px;
+    }
+}
+
+@media (max-width: 430px) {
+    .seComentarios{
+        padding: 0;
+    }
+    .text-comments h3 {
+        padding: 5px 0px 20px 0px;
+    }
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-comment p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 380px) {
+    .user-comment p {
+        width: 200px;
+    }
+}
+
+/*INICIO About*/
+.container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    background-color: var(--fundo);
+  }
+
+.container-text-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-h2 {
+    color: var(--vermelho);
+    font-family: var(--destaque);
+}
+
+.container-text-img img {
+    width: 350px;
+    justify-content: center;
+    margin-left: 7rem;
+}
+
+.container-text-img p {
+    color: white;
+    width: 500px;
+    margin-right: 10rem;
+    font-family: var(--padrao);
+}
+
+@media (max-width: 768px) {
+.container-text-img {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+.container-text-img img{
+    margin-left: 0;
+}
+.container-text-img p {
+    margin-right: 0;
+    width: 300px;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+}
+/*FIM About*/
+
+/*INICIO Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 6rem;
+    background: #000;
+    font-family: var(--padrao);
+}
+
+.main-footer h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: .97rem;
+}
+
+.main-footer a:hover{
+    color: var(--primaria);
+    transition: .5s;
+}
+
+.enterprise-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-footer p {
+    color: white;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    background-color: black;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--padrao);
+    margin-bottom: 0;
+}
+
+ .copyright a{
+    color: rgb(236, 175, 6);
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .main-footer {
+        display: grid;
+        grid-template-columns: repeat(4fr);
+    }
+}
+/*FIM Footer*/

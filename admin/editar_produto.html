@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto</title>
+</head>
+<body>
+    <h1>Editar Produto</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Nome:</label>
+        <input type="text" name="nome" value="" required><br>
+        <label>Preço:</label>
+        <input type="number" name="preco" step="0.01" value="" required><br>
+        <label>Descrição:</label>
+        <textarea name="descricao" required></textarea><br>
+        <label>Estoque:</label>
+        <input type="number" name="estoque" value="" required><br>
+        <label>Imagem:</label>
+        <input type="file" name="imagem"><br>
+        <img src="" alt="" width="100"><br>
+        <button type="submit">Atualizar Produto</button>
+    </form>
+    <p><a href="painel_admin.php">Voltar para o Painel de Administração</a></p>
+</body>
+</html>

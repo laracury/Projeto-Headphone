@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); /*Font Jua*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*Font Roboto*/
+
+
+:root{
+    --destaque: 'Jua', times, sans-serif;
+    --padrao: 'Roboto', Arial, sans-serif;
+
+    --primaria: #1FD7F4;
+    --primariaClaro: #47E6FF;
+    --primariaEscuro: #00B2CF;
+    --primariaTransparente: rgba(0, 179, 207, 0.75);
+    --vermelho: #F9595F;
+    --vermelhoClaro: #FF8287;
+    --vermelhoEscuro: #D42C33;
+    --verde: #34BF3B;
+    --verdeClaro: #3EE547;
+    --verdeEscuro: #129919;
+
+    --fundo: #0F1517;
+    --linear: linear-gradient( to bottom, #0F1517 100%,  #0F1517 50%, #0F1517 25%, #17607B 25%, #17607B 50%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

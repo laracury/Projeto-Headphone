@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração</title>
+</head>
+<body>
+    <h1>Painel de Administração</h1>
+    <p><a href="adicionar_produto.php">Adicionar Novo Produto</a></p>
+    <h2>Produtos</h2>
+    <ul>
+
+            <li>
+                <img src="" alt="" width="100">
+                <h3></h3>
+                <p>Preço: R$</p>
+                <p>Descrição:</p>
+                <p>Estoque:</p>
+
+                <!-- Link para editar o produto -->
+                <a href="editar_produto.php?id=">Editar</a>
+
+                <!-- Formulário para remover o produto -->
+                <form method="POST" action="admin_panel.php" style="display:inline;">
+                    <input type="hidden" name="acao" value="remover">
+                    <input type="hidden" name="produto_id" value="">
+                    <button type="submit">Remover</button>
+                </form>
+            </li>
+    </ul>
+</body>
+</html>
